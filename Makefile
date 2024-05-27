@@ -3,3 +3,6 @@ ci:
 
 start:
 	docker compose -f docker-compose.override.yml up
+
+env:
+	cp .env.example .env
