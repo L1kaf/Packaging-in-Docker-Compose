@@ -13,7 +13,8 @@ services:
     volumes:
      - ".env.example:/app/.env"
     depends_on:
-     - db
+      db:
+        condition: service_healthy
 
 
   db:
